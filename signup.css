@@ -10,7 +10,7 @@
 }
 :root{
     --lovelyPink:#D84060;
-    --specialBlue: #4A585F;
+    --specialBlue: #7d8e96;
     --very-light-blue: #BBC9D0;
 }
 body {
@@ -21,7 +21,8 @@ body {
 }
 .image-container{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    width: calc(50%);
     align-items: center;
     min-width: 40vw;
     height:100vh; 
@@ -29,8 +30,7 @@ body {
 
 }
 .picture {
-    position: relative;
-    top: 3rem;
+    max-height: fit-content;
 
 }
 .form-container  {
@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    background-color: var(--specialBlue);
 
 }
 
@@ -49,11 +50,10 @@ body {
     letter-spacing: 1.4px;
 }
 h{
-    font-size: larger;
+    font-size: 5rem;
 }
 sup{
     font-size:smaller;
-    font-family: 500;
 }
 .license{
     position: absolute;
@@ -66,13 +66,13 @@ sup{
 .dummy-txt{
     display: flex;
     flex-flow: column wrap;
-    gap: 1.5rem;
+    gap: 1.7rem;
     margin: 1rem;
     padding: 3rem 2rem 4rem 2rem;
 }
 .dummy-txt > p{
     align-self: flex-start;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 600;
 
 }
@@ -80,16 +80,19 @@ form{
     display: flex;
     flex-flow: row wrap;
     padding: .6rem;
-    min-width: 50vh;
-    box-shadow: 0px 3px 10px var(--specialBlue);
+    /* max-width: 50vw; */
+    max-width: 100%;
+    background-color: var(--very-light-blue);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 6px;
+    /* box-shadow: 0px 3px 10px var(--specialBlue); */
 
 }
 .input{
     display: flex;
     flex-direction: column;
     padding: .7rem;
-    
-
 }
 label{
     margin: 7px;
@@ -112,7 +115,8 @@ input:focus{
 
 button{
     margin-top: 3rem;
-    margin-bottom: .3rem;
+    margin-bottom: .7rem;
+    margin-left: 1rem;
     padding: 16px;
     letter-spacing: .6px;
     opacity: .9;
@@ -136,14 +140,26 @@ button:hover{
 }
 .account > p{
     font-size: 1.5rem;
-    color: #4A585F;
+    color: white;
     margin-top: 1.5rem;
 }
 #log-in{
     text-decoration: none;
+    font-weight: 600;
     color: var(--lovelyPink);
 
 }
 #log-in:hover{
-    color: var(--specialBlue)
+    color: black;
+}
+
+/* .image-container, .form-container {
+    width: 100%;
+} */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .image-container, .form-container {
+        width: 100%;
+        margin: 0;
+    }
 }
