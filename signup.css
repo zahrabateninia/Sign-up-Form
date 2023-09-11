@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --lovelyPink:#D84060;
+    --specialBlue: #4A585F;
+    --very-light-blue: #BBC9D0;
+}
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-size: larger;
+}
+.image-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-width: 40vw;
+    height:100vh; 
+    background-color: var(--very-light-blue) ;
+
+}
+.picture {
+    position: relative;
+    top: 3rem;
+
+}
+.form-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.brand{
+    font-family: 'Bebas Neue';
+    align-self: flex-start;
+    margin: 1rem;
+    color: var(--lovelyPink);
+    letter-spacing: 1.4px;
+}
+h{
+    font-size: larger;
+}
+sup{
+    font-size:smaller;
+    font-family: 500;
+}
+.license{
+    position: absolute;
+    bottom: 3px;
+    opacity: 50%;
+    color: black;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+.dummy-txt{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+    margin: 1rem;
+    padding: 3rem 2rem 4rem 2rem;
+}
+.dummy-txt > p{
+    align-self: flex-start;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+form{
+    display: flex;
+    flex-flow: row wrap;
+    padding: .6rem;
+    min-width: 50vh;
+    box-shadow: 0px 3px 10px var(--specialBlue);
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;
+    
+
+}
+label{
+    margin: 7px;
+    margin-left: 0px;
+    font-weight: 550;
+}
+input{
+    border:1px solid var(--specialBlue);
+    box-shadow: 1px 1px 4px var(--lovelyPink);
+    border-radius: 3px;
+    outline: none;
+    height: 2rem;
+    min-width: 15rem;
+}
+input:focus{
+    background-color: rgb(243, 214, 219);
+    border-color: var(--lovelyPink);
+    outline: 2px solid var(--lovelyPink);
+}
+
+button{
+    margin-top: 3rem;
+    margin-bottom: .3rem;
+    padding: 16px;
+    letter-spacing: .6px;
+    opacity: .9;
+    background-color: var(--lovelyPink);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    transition:.4s;
+    font-size: 1.4rem;
+    
+}
+button:hover{
+    background-color: var(var(--specialBlue));
+    opacity: 1;
+    transform: scale(1.03);
+}
+.account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.account > p{
+    font-size: 1.5rem;
+    color: #4A585F;
+    margin-top: 1.5rem;
+}
+#log-in{
+    text-decoration: none;
+    color: var(--lovelyPink);
+
+}
+#log-in:hover{
+    color: var(--specialBlue)
+}
