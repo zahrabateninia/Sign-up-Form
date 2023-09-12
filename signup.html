@@ -18,7 +18,7 @@
         <div class="dummy-txt">
             <p>
                 This is not a real online service! You know you need something like This
-                in your life to help you realize your deepest dreams.
+                in your life to help you realize your deepest dreams. <br>
                 Sign up now to get started.
             </p>
             <p>You know you want to.</p>
@@ -27,33 +27,36 @@
 
     
         <form action="#" method="get">
-            <div class="input">
-                <label for="first-name" > FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" minlength="3" required>
+            <div class="all-inputs">
+                <div class="input">
+                    <label for="first-name" > FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" minlength="3" required>
+                </div>
+                <div class="input">
+                    <label for="last-name" > LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name-name" minlength="3" required>
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="input">
+                    <label for="phone-number" > PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" >
+                </div>
+                
+                <div class="input">
+                    <label for="password"> PASSWORD</label>
+                    <input type="password"  name="password" id="password">
+                </div>
+                
+                <div class="input">
+                    <label for="confirm-password" > CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
             </div>
-            <div class="input">
-                <label for="last-name" > LAST NAME</label>
-                <input type="text" name="last-name" id="last-name-name" minlength="3" required>
-            </div>
-            <div class="input">
-                <label for="email" >EMAIL</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            
-            <div class="input">
-                <label for="phone-number" > PHONE NUMBER</label>
-                <input type="tel" name="phone-number" id="phone-number" >
-            </div>
-            
-            <div class="input">
-                <label for="password"> PASSWORD</label>
-                <input type="password"  name="password" id="password">
-            </div>
-            
-            <div class="input">
-                <label for="confirm-password" > CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
-            </div>
+
             <div class="button">
                 <button type="submit">Create Account</button>
   
@@ -63,8 +66,7 @@
 
 
         <div class="account">
-                      <p>Already have an account? <a href="#" id="log-in">Log in</a></p>
-            
+            <p>Already have an account? <a href="#" id="log-in">Log in</a></p>
         </div>
         
     </div>

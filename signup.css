@@ -2,6 +2,11 @@
     font-family: 'Bebas Neue';
     src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: Outfit;
+    src: url('fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +15,12 @@
 }
 :root{
     --lovelyPink:#D84060;
-    --specialBlue: #7d8e96;
+    --specialBlue: #49565e;
     --very-light-blue: #BBC9D0;
 }
 body {
     display: flex;
+    font-family: Outfit, sans-serif;
     height: 100vh;
     width: 100vw;
     font-size: larger;
@@ -24,8 +30,10 @@ body {
     flex-flow: column nowrap;
     width: calc(50%);
     align-items: center;
-    min-width: 40vw;
+    width: 60vw;
+    min-width: fit-content;
     height:100vh; 
+    min-height: fit-content;
     background-color: var(--very-light-blue) ;
 
 }
@@ -44,6 +52,7 @@ body {
 
 .brand{
     font-family: 'Bebas Neue';
+    font-size: 3rem;
     align-self: flex-start;
     margin: 1rem;
     color: var(--lovelyPink);
@@ -72,52 +81,56 @@ sup{
 }
 .dummy-txt > p{
     align-self: flex-start;
-    font-size: 1.9rem;
+    color: var(--very-light-blue);
+    font-size: 2.3rem;
     font-weight: 600;
+    line-height: 3rem;
 
 }
-form{
+.all-inputs {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     padding: .6rem;
-    /* max-width: 50vw; */
-    max-width: 100%;
+    min-width: fit-content;
     background-color: var(--very-light-blue);
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 1rem;
+    margin: auto 2rem;
     border-radius: 6px;
-    /* box-shadow: 0px 3px 10px var(--specialBlue); */
-
 }
 .input{
     display: flex;
-    flex-direction: column;
-    padding: .7rem;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+    margin :0 auto;
 }
 label{
     margin: 7px;
     margin-left: 0px;
-    font-weight: 550;
+    font-weight: 600;
+    opacity: .7;
+    font-family: Outfit, sans-serif;
 }
 input{
     border:1px solid var(--specialBlue);
-    box-shadow: 1px 1px 4px var(--lovelyPink);
-    border-radius: 3px;
+    box-shadow: 0px 0px 5px var(--lovelyPink);
+    border-radius: 6px;
     outline: none;
     height: 2rem;
     min-width: 15rem;
+    font-size: 1.3rem;
+    padding-left: .6rem;
 }
 input:focus{
-    background-color: rgb(243, 214, 219);
     border-color: var(--lovelyPink);
     outline: 2px solid var(--lovelyPink);
 }
 
 button{
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: .7rem;
-    margin-left: 1rem;
-    padding: 16px;
+    margin-left: 2rem;
+    padding: 1.4rem 2rem;
     letter-spacing: .6px;
     opacity: .9;
     background-color: var(--lovelyPink);
@@ -126,6 +139,7 @@ button{
     border: none;
     transition:.4s;
     font-size: 1.4rem;
+    font-size: x-large;
     
 }
 button:hover{
@@ -134,14 +148,14 @@ button:hover{
     transform: scale(1.03);
 }
 .account{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 2rem;
+
 }
 .account > p{
     font-size: 1.5rem;
     color: white;
-    margin-top: 1.5rem;
+    margin-top: .3rem;
 }
 #log-in{
     text-decoration: none;
