@@ -167,13 +167,3 @@ button:hover{
     color: black;
 }
 
-/* .image-container, .form-container {
-    width: 100%;
-} */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .image-container, .form-container {
-        width: 100%;
-        margin: 0;
-    }
-}
