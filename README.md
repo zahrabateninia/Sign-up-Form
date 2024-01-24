@@ -3,6 +3,10 @@
 ## Introduction
 This project, "Sign-Up Form," showcases client-side form validation using JavaScript. The primary focus is on demonstrating various validation techniques that can be implemented on the client side to ensure data integrity before form submission.
 
+## Demo
+
+You can view a live demo of this project [here](https://zahrabateninia.github.io/Sign-up-Form/).
+
 ## Features
 - **Client-Side Validation:** Utilizes JavaScript to validate user input before submission.
 - **Interactive UI:** Offers real-time feedback on user input, enhancing the user experience.
