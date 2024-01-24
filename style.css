@@ -52,11 +52,10 @@ body {
 
 .brand{
     font-family: 'Bebas Neue';
-    font-size: 3rem;
+    font-size: 2rem;
     align-self: flex-start;
     margin: 1rem;
     color: var(--lovelyPink);
-    letter-spacing: 1.4px;
 }
 h{
     font-size: 5rem;
@@ -82,8 +81,7 @@ sup{
 .dummy-txt > p{
     align-self: flex-start;
     color: var(--very-light-blue);
-    font-size: 2.3rem;
-    font-weight: 600;
+    font-size: 2rem;
     line-height: 3rem;
 
 }
@@ -113,7 +111,6 @@ label{
 }
 input{
     border:1px solid var(--specialBlue);
-    box-shadow: 0px 0px 5px var(--lovelyPink);
     border-radius: 6px;
     outline: none;
     height: 2rem;
@@ -130,7 +127,7 @@ button{
     margin-top: 5rem;
     margin-bottom: .7rem;
     margin-left: 2rem;
-    padding: 1.4rem 2rem;
+    padding: 1rem 1.5rem;
     letter-spacing: .6px;
     opacity: .9;
     background-color: var(--lovelyPink);
@@ -138,9 +135,7 @@ button{
     border-radius: 7px;
     border: none;
     transition:.4s;
-    font-size: 1.4rem;
-    font-size: x-large;
-    
+    font-size: 1rem;   
 }
 button:hover{
     background-color: var(var(--specialBlue));
@@ -153,17 +148,16 @@ button:hover{
 
 }
 .account > p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     margin-top: .3rem;
 }
 #log-in{
     text-decoration: none;
-    font-weight: 600;
     color: var(--lovelyPink);
 
 }
 #log-in:hover{
-    color: black;
+    color: rgb(235, 216, 216);
 }
 
