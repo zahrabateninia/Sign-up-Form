@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./formValidation.js" defer></script>
 </head>
 <body>
     <div class="image-container">
@@ -18,7 +19,7 @@
         <div class="dummy-txt">
             <p>
                 This is not a real online service! You know you need something like This
-                in your life to help you realize your deepest dreams. <br>
+                in your life to help you realize your deepest dreams.
                 Sign up now to get started.
             </p>
             <p>You know you want to.</p>
@@ -26,11 +27,14 @@
 
 
     
-        <form action="#" method="get">
-            <div class="all-inputs">
+        <form action="#" method="get" novalidate>
+            <!-- turn off the browser's automatic validation; this lets our script take control over validation -->
+            <div class="inputs-container">
                 <div class="input">
                     <label for="first-name" > FIRST NAME</label>
                     <input type="text" name="first-name" id="first-name" minlength="3" required>
+                    <span class="first-name-error" aria-live="polite"></span>
+                    <!--  The aria-live attribute is to make sure that our custom error message will be presented to everyone -->
                 </div>
                 <div class="input">
                     <label for="last-name" > LAST NAME</label>
@@ -38,7 +42,8 @@
                 </div>
                 <div class="input">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required minlength="8">
+                    <span class="email-error" aria-live="polite"></span>
                 </div>
                 
                 <div class="input">

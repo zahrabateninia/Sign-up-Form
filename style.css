@@ -17,12 +17,13 @@
     --lovelyPink:#D84060;
     --specialBlue: #49565e;
     --very-light-blue: #BBC9D0;
+    --error-color: rgb(239, 70, 70);
 }
 body {
     display: flex;
     font-family: Outfit, sans-serif; 
     font-size: larger;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .image-container{
@@ -88,23 +89,36 @@ sup{
     line-height: 3rem;
 
 }
-.all-inputs {
+.inputs-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: .6rem;
+    justify-content: center;
+    /* padding: .6rem; */
     min-width: fit-content;
     background-color: var(--very-light-blue);
-    padding: 1rem;
-    margin: auto 2rem;
+    padding: 1rem; 
+    margin: auto 4rem;
     border-radius: 6px;
 }
-.input{
+
+div.input{
     display: flex;
     flex-flow: column wrap;
-    padding: 1.5rem;
-    margin :0 auto;
+    padding: 1rem;
+    justify-content: center;
 }
+
+/* error messages */
+span.error {
+    padding: 1;
+    margin-top: .5rem;
+    font-size: 80%;
+    color: var(--error-color);
+  }
+  
+/* /error messages */
+
 label{
     margin: 7px;
     margin-left: 0px;
