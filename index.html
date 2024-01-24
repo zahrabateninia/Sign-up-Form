@@ -43,12 +43,14 @@
                 
                 <div class="input">
                     <label for="phone-number" > PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone-number" >
+                    <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                    title="Phone number should be in the format: 123-456-7890" 
+                    name="phone-number" id="phone-number" required >
                 </div>
                 
                 <div class="input">
                     <label for="password"> PASSWORD</label>
-                    <input type="password"  name="password" id="password">
+                    <input type="password"  name="password" id="password" required>
                 </div>
                 
                 <div class="input">
