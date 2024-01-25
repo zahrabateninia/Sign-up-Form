@@ -7,87 +7,81 @@
     src: url('fonts/Outfit-VariableFont_wght.ttf') format('truetype');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-:root{
-    --lovelyPink:#D84060;
+:root {
+    --lovelyPink: #d84060;
     --specialBlue: #49565e;
-    --very-light-blue: #BBC9D0;
+    --very-light-blue: #bbc9d0;
     --error-color: rgb(239, 70, 70);
 }
 body {
     display: flex;
-    font-family: Outfit, sans-serif; 
+    font-family: Outfit, sans-serif;
     font-size: larger;
     min-height: 100vh;
 }
 
-.image-container{
+.image-container {
     display: flex;
     flex-flow: column nowrap;
+    flex: 0 1 40vw;
     position: relative;
-    width: calc(50%);
     align-items: center;
-    width: 60vw;
-    min-width: fit-content;
-    min-height: fit-content;
-    background-color: var(--very-light-blue) ;
-
+    /* width: 100vw; */
+    background-color: var(--very-light-blue);
 }
 .picture {
     max-height: fit-content;
-
 }
-.form-container  {
+.form-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     background-color: var(--specialBlue);
-
 }
 
-.brand{
+.brand {
     font-family: 'Bebas Neue';
     font-size: 2rem;
     align-self: flex-start;
     margin: 1rem;
     color: var(--lovelyPink);
 }
-h{
+h {
     font-size: 5rem;
 }
-sup{
-    font-size:smaller;
+sup {
+    font-size: smaller;
 }
-.license{
+.license {
     position: absolute;
     bottom: 3px;
     opacity: 50%;
     color: black;
     margin-top: 2rem;
     text-decoration: none;
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 /* **** */
 
-.dummy-txt{
+.dummy-txt {
     display: flex;
     flex-flow: column wrap;
     gap: 1.7rem;
     margin: 1rem;
     padding: 3rem 2rem 4rem 2rem;
 }
-.dummy-txt > p{
+.dummy-txt > p {
     align-self: flex-start;
     color: var(--very-light-blue);
     font-size: 2rem;
     line-height: 3rem;
-
 }
 .inputs-container {
     display: flex;
@@ -97,12 +91,12 @@ sup{
     /* padding: .6rem; */
     min-width: fit-content;
     background-color: var(--very-light-blue);
-    padding: 1rem; 
+    padding: 1rem;
     margin: auto 4rem;
     border-radius: 6px;
 }
 
-div.input{
+div.input {
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
@@ -112,73 +106,70 @@ div.input{
 /* error messages */
 span.error {
     padding: 1;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-size: 80%;
     color: var(--error-color);
-  }
-  
+}
+
 /* /error messages */
 
-label{
+label {
     margin: 7px;
     margin-left: 0px;
     font-weight: 600;
-    opacity: .7;
+    opacity: 0.7;
     font-family: Outfit, sans-serif;
 }
-input{
-    border:1px solid var(--specialBlue);
+input {
+    border: 1px solid var(--specialBlue);
     border-radius: 6px;
     outline: none;
     height: 2rem;
     min-width: 15rem;
     font-size: 1.3rem;
-    padding-left: .6rem;
+    padding-left: 0.6rem;
 }
-input:focus{
+input:focus {
     border-color: var(--lovelyPink);
     outline: 2px solid var(--lovelyPink);
 }
 
-button{
+button {
     margin-top: 5rem;
-    margin-bottom: .7rem;
+    margin-bottom: 0.7rem;
     margin-left: 2rem;
     padding: 1rem 1.5rem;
-    letter-spacing: .6px;
-    opacity: .9;
+    letter-spacing: 0.6px;
+    opacity: 0.9;
     background-color: var(--lovelyPink);
     color: white;
     border-radius: 7px;
     border: none;
-    transition:.4s;
-    font-size: 1rem;   
+    transition: 0.4s;
+    font-size: 1rem;
 }
-button:hover{
+button:hover {
     background-color: var(var(--specialBlue));
     opacity: 1;
     transform: scale(1.03);
 }
-.account{
+.account {
     align-self: flex-start;
     margin-left: 2rem;
     margin-bottom: 2rem;
-
 }
-.account > p{
+.account > p {
     font-size: 1rem;
     color: white;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
 }
-#log-in{
+#log-in {
     text-decoration: none;
     color: var(--lovelyPink);
-
 }
-#log-in:hover{
+#log-in:hover {
     color: rgb(235, 216, 216);
 }
-
 /* for smaller width size of 1490px or equal to that, hide the image container */
 @media screen and (max-width: 1490px) {
     .image-container {

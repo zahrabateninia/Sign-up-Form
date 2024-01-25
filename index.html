@@ -1,81 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./formValidation.js" defer></script>
-</head>
-<body>
-    <div class="image-container">
-        <h1 class="brand">ZABINI <sup>TM</sup></h1>
-        <img src="signup.svg" alt="Sign-up svg" class="picture">
-        <a href="https://storyset.com/user" class="license">User illustrations by Storyset</a>  
-    </div>
-
-    <div class="form-container">
-        <div class="dummy-txt">
-            <p>
-                This is not a real online service! You know you need something like This
-                in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-            </p>
-            <p>You know you want to.</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./formValidation.js" defer></script>
+    </head>
+    <body>
+        <div class="image-container">
+            <h1 class="brand">ZABINI <sup>TM</sup></h1>
+            <img src="signup.svg" alt="Sign-up svg" class="picture" />
+            <a href="https://storyset.com/user" class="license"
+                >User illustrations by Storyset</a
+            >
         </div>
 
-
-    
-        <form action="#" method="get" novalidate>
-            <!-- turn off the browser's automatic validation; this lets our script take control over validation -->
-            <div class="inputs-container">
-                <div class="input">
-                    <label for="first-name" > FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" minlength="3" required>
-                    <span class="first-name-error" aria-live="polite"></span>
-                    <!--  The aria-live attribute is to make sure that our custom error message will be presented to everyone -->
-                </div>
-                <div class="input">
-                    <label for="last-name" > LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name-name" minlength="3" required>
-                </div>
-                <div class="input">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required minlength="8">
-                    <span class="email-error" aria-live="polite"></span>
-                </div>
-                
-                <div class="input">
-                    <label for="phone-number" > PHONE NUMBER</label>
-                    <input type="tel"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-                    title="Phone number should be in the format: 123-456-7890" 
-                    name="phone-number" id="phone-number" required >
-                </div>
-                
-                <div class="input">
-                    <label for="password"> PASSWORD</label>
-                    <input type="password"  name="password" id="password" required>
-                </div>
-                
-                <div class="input">
-                    <label for="confirm-password" > CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                </div>
+        <div class="form-container">
+            <div class="dummy-txt">
+                <p>
+                    The constraint validation API gives you a powerful tool to
+                    handle form validation, letting you have enormous control
+                    over the user interface above and beyond what you can do
+                    with HTML and CSS alone.
+                </p>
+                <p>You know you want to.</p>
             </div>
 
-            <div class="button">
-                <button type="submit">Create Account</button>
-  
+            <form action="#" method="get" novalidate>
+                <!-- turn off the browser's automatic validation; this lets our script take control over validation -->
+                <div class="inputs-container">
+                    <div class="input">
+                        <label for="first-name"> FIRST NAME</label>
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            minlength="3"
+                            required
+                        />
+                        <span
+                            class="first-name-error"
+                            aria-live="polite"
+                        ></span>
+                        <!--  The aria-live attribute is to make sure that our custom error message will be presented to everyone -->
+                    </div>
+                    <div class="input">
+                        <label for="last-name"> LAST NAME</label>
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name-name"
+                            minlength="3"
+                            required
+                        />
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            minlength="8"
+                        />
+                        <span class="email-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="input">
+                        <label for="phone-number"> PHONE NUMBER</label>
+                        <input
+                            type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            title="Phone number should be in the format: 123-456-7890"
+                            name="phone-number"
+                            id="phone-number"
+                            required
+                        />
+                    </div>
+
+                    <div class="input">
+                        <label for="password"> PASSWORD</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm-password"> CONFIRM PASSWORD</label>
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            id="confirm-password"
+                        />
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+
+            <div class="account">
+                <p>
+                    Already have an account? <a href="#" id="log-in">Log in</a>
+                </p>
             </div>
-        </form>
-    
-
-
-        <div class="account">
-            <p>Already have an account? <a href="#" id="log-in">Log in</a></p>
         </div>
-        
-    </div>
-</body>
+    </body>
 </html>
